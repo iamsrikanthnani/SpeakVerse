@@ -2,6 +2,26 @@
   "name": "speak-verse",
   "version": "0.1.0",
   "private": true,
+  "description": "SpeakVerse combines Deepgram for speech-to-text, ElevenLabs for realistic voice, and OpenAI's GPT-4o for real-time, human-like conversations. It offers smooth interactions, instant speech interruptions, and intelligent responses for natural, lifelike dialogue.",
+  "author": "Srikanth Nani <srikanthnani.com>",
+  "keywords": [
+    "speech-to-text",
+    "text-to-speech",
+    "AI",
+    "conversation",
+    "Deepgram",
+    "ElevenLabs",
+    "OpenAI",
+    "GPT-4o"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iamsrikanthnani/SpeakVerse.git"
+  },
+  "bugs": {
+    "url": "https://github.com/iamsrikanthnani/SpeakVerse/issues"
+  },
+  "homepage": "https://github.com/iamsrikanthnani/SpeakVerse#readme",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
