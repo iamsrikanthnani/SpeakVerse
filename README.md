@@ -2,6 +2,8 @@
 
 SpeakVerse is an innovative open-source project that brings AI-powered conversations to life! 🚀 It seamlessly combines Deepgram for lightning-fast speech-to-text, ElevenLabs for ultra-realistic voice synthesis, and OpenAI's cutting-edge GPT-4o for intelligent, human-like dialogue.
 
+[![SpeakVerse](https://raw.githubusercontent.com/iamsrikanthnani/SpeakVerse/master/app/og-image.png)](https://github.com/iamsrikanthnani)
+
 ## ✨ Features
 
 - 🎙️ Real-time speech-to-text using Deepgram
