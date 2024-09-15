@@ -13,6 +13,7 @@ import {
   useMicrophone,
 } from "@/contexts/microphone";
 import Visualizer from "@/components/Visualizer";
+import { useCompletion } from "ai/react";
 
 export default function Home() {
   const [caption, setCaption] = useState<string | undefined>("");
@@ -21,6 +22,13 @@ export default function Home() {
     useMicrophone();
   const captionTimeout = useRef<any>();
   const keepAliveInterval = useRef<any>();
+
+  const { complete, completion } = useCompletion({
+    api: "/api/chat",
+    onFinish: async (prompt, completion) => {
+      console.log("completion", completion);
+    },
+  });
 
   useEffect(() => {
     setupMicrophone();
