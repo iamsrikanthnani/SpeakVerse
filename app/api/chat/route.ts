@@ -11,7 +11,14 @@ export async function POST(req: Request) {
   try {
     const response = await client.chat.completions.create(
       {
-        messages: [{ role: "user", content: message }],
+        messages: [
+          {
+            role: "system",
+            content:
+              "Provide short, concise responses in plain text. Avoid formatting or lengthy explanations.",
+          },
+          { role: "user", content: message },
+        ],
         model: "gpt-4o",
         stream: true,
       },
